@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 
-import { MantineProvider, Text } from '@mantine/core'
+import { Text } from '@mantine/core'
 
 const App = () => {
   const [count, setCount] = useState(0)
