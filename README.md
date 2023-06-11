@@ -1,3 +1,3 @@
-# chordshaper
+# The Chord Shaper
 
-kek
+# Overview
