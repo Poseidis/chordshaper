@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 3,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 85.0, 1486.0, 929.0 ],
+		"rect" : [ 42.0, 85.0, 1486.0, 913.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,42 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-34",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "int", "int", "int" ],
+					"patching_rect" : [ 132.25, 342.0, 41.0, 22.0 ],
+					"text" : "notein"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-32",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 95.894737124443054, 394.0, 50.0, 22.0 ],
+					"text" : "67"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-29",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 153.078947901725769, 394.0, 50.0, 22.0 ],
+					"text" : "0"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-258",
 					"maxclass" : "message",
@@ -143,7 +179,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 827.44346296787262, 440.78947377204895, 220.0, 64.0 ],
-					"text" : "dim7"
+					"text" : "majb7"
 				}
 
 			}
@@ -540,7 +576,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 119.736840963363647, 805.263150215148926, 50.0, 22.0 ],
-					"text" : "0 65"
+					"text" : "0 64"
 				}
 
 			}
@@ -659,7 +695,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 206.25, 990.131569504737854, 22.0, 140.0 ]
+					"patching_rect" : [ 206.25, 993.131569504737854, 22.0, 140.0 ]
 				}
 
 			}
@@ -991,30 +1027,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-2",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 113.25, 394.0, 150.0, 34.0 ],
-					"text" : "base pitch\nkeyboard?"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-25",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "int", "int" ],
-					"patching_rect" : [ 374.0, 148.0, 47.0, 22.0 ],
-					"text" : "unpack"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-23",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -1049,13 +1061,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 5,
-							"revision" : 3,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ -386.0, -995.0, 640.0, 480.0 ],
+						"rect" : [ 42.0, 85.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1083,6 +1095,7 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-11",
@@ -1212,7 +1225,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "int", "" ],
 									"patching_rect" : [ 185.0, 119.0, 84.0, 22.0 ],
-									"text" : "serial g 38400"
+									"text" : "serial e 38400"
 								}
 
 							}
@@ -1390,18 +1403,6 @@
 					}
 ,
 					"text" : "p serial_inputs"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-4",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 474.552631497383118, 183.592593491077423, 57.0, 22.0 ],
-					"text" : "zl stream"
 				}
 
 			}
@@ -2284,6 +2285,29 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-29", 1 ],
+					"source" : [ "obj-34", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-32", 1 ],
+					"order" : 0,
+					"source" : [ "obj-34", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-87", 0 ],
+					"order" : 1,
+					"source" : [ "obj-34", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-121", 0 ],
 					"order" : 0,
 					"source" : [ "obj-36", 0 ]
@@ -2660,21 +2684,21 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "chordTone.maxpat",
-				"bootpath" : "~/OneDrive/Actually Useful/College/2023 Spring/CS 496 DMID/ChordBuilder",
+				"bootpath" : "~/OneDrive/Actually Useful/College/2023 Spring/CS 496 DMID/chordshaper/max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "keyboard_mapping.maxpat",
-				"bootpath" : "~/OneDrive/Actually Useful/College/2023 Spring/CS 496 DMID/polykeyboard",
-				"patcherrelativepath" : "../polykeyboard",
+				"bootpath" : "~/OneDrive/Actually Useful/College/2023 Spring/CS 496 DMID/chordshaper/max",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "limitrange.maxpat",
-				"bootpath" : "~/OneDrive/Actually Useful/College/2023 Spring/CS 496 DMID/ChordBuilder",
+				"bootpath" : "~/OneDrive/Actually Useful/College/2023 Spring/CS 496 DMID/chordshaper/max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
